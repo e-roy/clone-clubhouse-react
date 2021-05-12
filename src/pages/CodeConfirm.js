@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function CodeConfirm() {
   return (
     <div className={style.phoneConfirmContainer}>
-      <Link exact to="/get_username" className={style.backBtn}>
+      <Link exact to="/phone-confirm" className={style.backBtn}>
         <img src="./images/arrow.png" alt="" />
       </Link>
       <div className="text-center">

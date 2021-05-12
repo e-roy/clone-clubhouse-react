@@ -9,13 +9,13 @@ function Header() {
         <img src="/images/search.png" alt="" />
       </Link>
       <div className={style.nav_items}>
-        <Link to="/friends_invite">
+        <Link to="/invite">
           <img src="/images/invite.png" alt="" />
         </Link>
-        <Link to="/upcoming">
+        <Link to="/calendar">
           <img src="/images/calendar.png" alt="" />
         </Link>
-        <Link to="/activity">
+        <Link to="/notifications">
           <img src="/images/noti.png" alt="" />
         </Link>
         <Link to="/profile">
