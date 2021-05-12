@@ -27,7 +27,7 @@
 
 .profileContainer p {
   font-size: 1.1em;
-  color: #aaaaaa;
+  color: var(--textColorSecondary);
   margin: 0;
 }
 

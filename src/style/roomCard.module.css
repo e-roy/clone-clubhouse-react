@@ -1,9 +1,11 @@
 .roomCardContainer {
-  background-color: white;
+  background-color: var(--bgCardColor);
   padding: 1em 1em;
   border-radius: 1em;
   border: none;
   margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0px 2px 3px var(--boxShadowColor);
 }
 
 .roomCardContainer h6 {
@@ -19,7 +21,7 @@
   color: black;
 }
 
-.roomMembers img {
+.roomCardAvatar img {
   width: 35px;
   height: 35px;
   border-radius: 0.6em;

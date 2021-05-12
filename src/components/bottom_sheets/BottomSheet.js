@@ -1,8 +1,8 @@
 import React from "react";
 import SwipeableBottomSheet from "react-swipeable-bottom-sheet";
-import style from "../style/bottomSheet.module.css";
-import StartRoom from "./bottom_sheets/StartRoom";
-import NewRoom from "./bottom_sheets/NewRoom";
+import style from "./bottomSheet.module.css";
+import StartRoom from "./StartRoom";
+import NewRoom from "./NewRoom";
 
 function BottomSheet(props) {
   return (

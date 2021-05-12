@@ -37,11 +37,11 @@ function NewRoom(props) {
         </div>
         <div className={style.roomDetailCard}>
           <div
-            classname="d-flex align-items-center justify-content-between flex-wrap"
+            className="d-flex align-items-center justify-content-between flex-wrap"
             style={{ padding: "0.5em 1em" }}
           >
-            {card.members.map((item) => (
-              <div className={style.memberContainer}>
+            {card.members.map((item, index) => (
+              <div key={index} className={style.memberContainer}>
                 {micMuteVisible ? (
                   <div className={style.audio_icon}>
                     <BsMicMuteFill />

@@ -1,6 +1,18 @@
+* {
+  font-family: "Nunito Sans";
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
 :root {
-  --textColor: rgb(65, 64, 66);
-  --btnBgColor: #3287b7;
+  --textColor: rgb(51, 51, 51);
+  --textColorSecondary: rgb(112, 102, 75);
+  --btnMainBgColor: #28ae61;
+  --btnBgColor: rgb(84, 118, 170);
+  --bgMainColor: #f2efe4;
+  --bgSecondaryColor: #eae8d8;
+  --bgCardColor: #f9f9f9;
+  --boxShadowColor: #cccccc;
 }
 
 html {
@@ -38,7 +50,7 @@ a:hover {
 }
 
 .app_layout {
-  background-color: #f2f0e4;
+  background-color: var(--bgMainColor);
   height: 100vh;
   position: relative;
   width: 100%;

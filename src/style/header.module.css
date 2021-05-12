@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #f2f0e4;
+  background-color: var(--bgMainColor);
 }
 
 .Header img {

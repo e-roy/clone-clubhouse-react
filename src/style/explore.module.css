@@ -22,7 +22,7 @@
 .exploreContainer h6 {
   font-size: 0.975em;
   font-weight: 500;
-  color: #bbbbbb;
+  color: var(--textColorSecondary);
   margin: 1.5em 0 0.5em 0;
 }
 
@@ -33,10 +33,10 @@
   bottom: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #f4f4f4 !important;
+  background-color: var(--bgSecondaryColor) !important;
   border: none !important;
-  color: #aaaaaa !important;
-  box-shadow: 0px 2px 3px #cccccc;
+  color: var(--textColorSecondary) !important;
+  box-shadow: 0px 2px 3px var(--boxShadowColor);
   font-weight: 500 !important;
 }
 
@@ -47,10 +47,10 @@
 }
 
 .peopleContainer {
-  background-color: white;
+  background-color: var(--bgCardColor);
   margin: 0 -0.5em;
-  padding: 0.5em 0.5em 0em 0.5em;
-  box-shadow: 0px 2px 3px #cccccc;
+  padding: 0.5em 1em 0em 1em;
+  box-shadow: 0px 2px 3px var(--boxShadowColor);
 }
 
 .peopleContainer > div {
@@ -70,6 +70,7 @@
   font-size: 1.1em;
   margin-bottom: 0.2em;
   padding-left: 0.8em;
+  font-weight: 600;
 }
 
 .peopleContainer p {
@@ -86,7 +87,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #aaaaaa;
+  color: var(--textColorSecondary);
 }
 
 .peopleContainer button {
@@ -100,29 +101,31 @@
 }
 
 .conversationCard {
-  background-color: white;
+  cursor: pointer;
+  background-color: var(--bgCardColor);
   border-radius: 0.5em;
   padding: 0.5em;
-  box-shadow: 0px 2px 3px #cccccc;
+  box-shadow: 0px 2px 3px var(--boxShadowColor);
+  min-height: 4.5em;
 }
 
 .conversationCard h6 {
   color: var(--textColor);
   font-size: 1em;
+  font-weight: 600;
   margin: 0;
-  display: flex;
-  align-items: center;
 }
 
 .conversationCard h6 span {
-  margin-right: 0.2em;
+  margin-left: 0.4em;
 }
 
 .conversationCard p {
-  margin: 0;
-  color: #aaaaaa;
+  margin: 0.5em 0 0;
+  color: var(--textColorSecondary);
   line-height: 1.2;
   font-size: 0.8em;
+  font-weight: 400;
 }
 
 .header {
@@ -130,9 +133,9 @@
   left: 0;
   right: 0;
   top: 0;
-  background-color: #f2f0e4;
+  background-color: var(--bgMainColor);
   z-index: 5;
-  padding: 0.5em;
+  padding: 0.5em 1em;
 }
 
 .head {

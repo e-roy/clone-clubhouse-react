@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import style from "../../style/bottomSheet.module.css";
-import { FcGlobe } from "react-icons/fc";
+import style from "./bottomSheet.module.css";
+import Emoji from "react-apple-emojis";
 
 function StartRoom(props) {
   const [room, setRoom] = useState("open");
@@ -16,7 +16,7 @@ function StartRoom(props) {
           onClick={() => setRoom("open")}
         >
           <div>
-            <FcGlobe />
+            <Emoji name="globe-showing-americas" width={48} />
           </div>
           Open
         </button>
@@ -26,7 +26,7 @@ function StartRoom(props) {
         >
           {" "}
           <div>
-            <FcGlobe />
+            <Emoji name="globe-showing-americas" width={48} />
           </div>
           Social
         </button>
@@ -36,7 +36,7 @@ function StartRoom(props) {
         >
           {" "}
           <div>
-            <FcGlobe />
+            <Emoji name="locked" width={48} />
           </div>
           Closed
         </button>
@@ -59,7 +59,10 @@ function StartRoom(props) {
             props.setSheetVisible(true);
           }}
         >
-          🎉Let's go
+          <span>
+            <Emoji name="party-popper" width={18} />
+          </span>
+          Let's go
         </button>
       </div>
     </div>

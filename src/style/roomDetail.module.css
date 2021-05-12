@@ -1,6 +1,6 @@
 .roomDetailContainer {
   height: 100%;
-  background-color: #f2f0e4;
+  background-color: var(--bgMainColor);
   margin: -1.5em -1em;
 }
 
@@ -69,7 +69,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 3px #cccccc;
+  box-shadow: 0px 0px 3px var(--boxShadowColor);
 }
 
 .memberContainer .audio_icon svg {
@@ -90,7 +90,7 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #28ae61;
+  background-color: var(--btnMainBgColor);
   color: white;
   margin-right: 0.2em;
   line-height: 0.8;

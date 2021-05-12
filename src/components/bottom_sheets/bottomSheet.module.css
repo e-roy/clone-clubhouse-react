@@ -1,9 +1,12 @@
 .BottomSheetContainer {
-  background-color: white;
+  margin: auto;
+  background-color: var(--bgCardColor);
   border-radius: 1.5em 1.5em 0 0;
   padding: 1.5em 1em;
   position: relative;
   height: 100%;
+  width: 100%;
+  max-width: 500px;
 }
 
 .switch_Line {
@@ -13,18 +16,17 @@
   transform: translateX("-50%");
   height: 4px;
   width: 35px;
-  background-color: #cccccc;
+  background-color: var(--boxShadowColor);
 }
 
 .addTopicBtn {
   background-color: transparent;
   border: none;
-  color: #28ae61;
-  padding-left: 17em;
+  color: var(--btnMainBgColor);
 }
 
 .selectRoom {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid var(--boxShadowColor);
   padding: 1.5em 0;
   display: flex;
   align-items: center;
@@ -46,7 +48,7 @@
 }
 
 .selectRoom button div {
-  background-color: lightseagreen;
+  background-color: rgb(0, 108, 145);
   border-radius: 1.5em;
 }
 
@@ -67,7 +69,10 @@
   border: none;
   border-radius: 2em;
   color: white;
-  background-color: #28ae61;
+  background-color: var(--btnMainBgColor);
   padding: 0.3em 2em;
   text-align: center;
+}
+.letGoBtn span {
+  padding-right: 0.5em;
 }
