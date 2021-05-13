@@ -2,7 +2,7 @@
   padding: 0 0.5em;
   height: 100%;
   overflow: auto;
-  padding-top: 5.2em;
+  padding-top: 6.5em;
 }
 
 .exploreContainer::-webkit-scrollbar {
@@ -138,7 +138,7 @@
   padding: 0.5em 1em;
 }
 
-.head {
+/* .head {
   text-align: center;
   padding: 0.5em 0.5em;
   position: relative;
@@ -157,4 +157,4 @@
   font-size: 1.2em;
   font-weight: 400;
   margin: 0;
-}
+} */

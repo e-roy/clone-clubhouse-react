@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../style/welcome.module.css";
+import style from "./style/welcome.module.css";
 import { Link } from "react-router-dom";
 
 function Welcome() {
@@ -21,13 +21,12 @@ function Welcome() {
       </div>
       <div className={style.actionBtn}>
         <Link
-          exact
           to="/phone-confirm"
           className="primaryBtn d-flex align-items-center mb-3"
         >
           Get your username <img src="" alt="" />
         </Link>
-        <Link>Have an invite text? Sign in</Link>
+        <Link to="/phone-confirm">Have an invite text? Sign in</Link>
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import style from "../../style/roomDetail.module.css";
+import style from "./roomDetail.module.css";
 import { AiOutlineFile, AiOutlinePlus } from "react-icons/ai";
 import { BsMicMuteFill, BsMicFill } from "react-icons/bs";
 
 function NewRoom(props) {
   const [micMuteVisible, setMicMuteVisible] = useState(true);
-  const [itemsVisible, setItemsVisible] = useState(true);
+  // const [itemsVisible, setItemsVisible] = useState(true);
   const card = props.cardDetail;
   return (
     <div>

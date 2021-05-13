@@ -1,0 +1,6 @@
+.invite_container {
+  margin: 3.5em 0;
+  padding: 0 1em 6em;
+  height: 100vh;
+  overflow: auto;
+}

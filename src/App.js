@@ -1,17 +1,17 @@
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Welcome from "./pages/Welcome";
+import Welcome from "./pages/AppSignIn/Welcome";
 import PlanLayout from "./pages/Layouts/PlanLayout";
-import PhoneConfirmation from "./pages/PhoneConfirmation";
-import CodeConfirm from "./pages/CodeConfirm";
-import AllowNotification from "./pages/AllowNotification";
+import PhoneConfirmation from "./pages/AppSignIn/PhoneConfirmation";
+import CodeConfirm from "./pages/AppSignIn/CodeConfirm";
+import AllowNotification from "./pages/AppSignIn/AllowNotification";
 import AppLayout from "./pages/Layouts/AppLayout";
-import Home from "./pages/Home";
-import Explore from "./pages/Explore";
-import Profile from "./pages/Profile";
-import Invite from "./pages/Invite";
-import Calendar from "./pages/Calendar";
-import Notifications from "./pages/Notifications";
+import Home from "./pages/App/home/Home";
+import Explore from "./pages/App/explore/Explore";
+import Profile from "./pages/App/profile/Profile";
+import Invite from "./pages/App/invite/Invite";
+import Upcoming from "./pages/App/upcoming/Upcoming";
+import Activity from "./pages/App/activity/Activity";
 
 function App() {
   return (
@@ -46,8 +46,8 @@ function App() {
           "/explore",
           "/profile",
           "/invite",
-          "/calendar",
-          "/notifications",
+          "/upcoming",
+          "/activity",
         ]}
       >
         <AppLayout>
@@ -56,12 +56,8 @@ function App() {
             <Route exact path="/explore" component={Explore}></Route>
             <Route exact path="/profile" component={Profile}></Route>
             <Route exact path="/invite" component={Invite}></Route>
-            <Route exact path="/calendar" component={Calendar}></Route>
-            <Route
-              exact
-              path="/notifications"
-              component={Notifications}
-            ></Route>
+            <Route exact path="/upcoming" component={Upcoming}></Route>
+            <Route exact path="/activity" component={Activity}></Route>
           </Switch>
         </AppLayout>
       </Route>

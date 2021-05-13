@@ -1,8 +1,6 @@
 .home_container {
-  padding-top: 3.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 3.5em;
+  margin: 3.5em 0;
+  padding: 0 1em 6em;
   height: 100vh;
   overflow: auto;
 }

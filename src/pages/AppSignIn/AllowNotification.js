@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../style/phoneConfirm.module.css";
+import style from "./style/phoneConfirm.module.css";
 import { Link } from "react-router-dom";
 
 function AllowNotification() {
@@ -16,12 +16,8 @@ function AllowNotification() {
             <p>Notifications may include alerts, sounds and icon badges</p>
           </div>
           <div className={style.action_btn}>
-            <Link exact to="/home">
-              Don't Allow
-            </Link>
-            <Link exact to="/home">
-              Allow
-            </Link>
+            <Link to="/home">Don't Allow</Link>
+            <Link to="/home">Allow</Link>
             <img
               src="./images/handIcon.svg"
               alt=""

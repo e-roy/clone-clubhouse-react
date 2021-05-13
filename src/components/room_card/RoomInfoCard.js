@@ -1,7 +1,5 @@
-// import React, { useState, useEffect } from "react";
 import React from "react";
-import style from "../style/roomCard.module.css";
-// import data from "../data/roomCard.json";
+import style from "./roomCard.module.css";
 import { BsChatDotsFill, BsFillPersonFill } from "react-icons/bs";
 import Emoji from "react-apple-emojis";
 

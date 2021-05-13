@@ -1,15 +1,17 @@
 import React, { useState } from "react";
-import Header from "../components/Header";
-import RoomInfoCard from "../components/RoomInfoCard";
-import style from "../style/home.module.css";
+import style from "./home.module.css";
+
+import Header from "../../../components/headers/Header";
+import RoomInfoCard from "../../../components/room_card/RoomInfoCard";
+import BottomSheet from "../../../components/bottom_sheets/BottomSheet";
+
 import { AiOutlinePlus } from "react-icons/ai";
 import { BsGrid3X3Gap } from "react-icons/bs";
-import BottomSheet from "../components/bottom_sheets/BottomSheet";
-import newRoomData from "../data/newRoom.json";
 import Emoji from "react-apple-emojis";
 
-import roomCardData from "../data/roomCard.json";
-import roomCardExploreData from "../data/roomCardExplore.json";
+import newRoomData from "../../../data/newRoom.json";
+import roomCardData from "../../../data/roomCard.json";
+import roomCardExploreData from "../../../data/roomCardExplore.json";
 
 function Home() {
   const [itemsVisible, setItemsVisible] = useState(true);
@@ -41,7 +43,6 @@ function Home() {
       )}
       <Header />
       <div className={style.home_container}>
-        {/* <DailyInfoCard /> */}
         <RoomInfoCard cards={roomCardData} />
         {exploreRoomsVisiblity ? (
           <RoomInfoCard cards={roomCardExploreData} />

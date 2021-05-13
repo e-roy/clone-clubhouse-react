@@ -1,9 +1,9 @@
 import React from "react";
-import style from "../style/explore.module.css";
+import style from "./explore.module.css";
 import { Input } from "antd";
 import { DownOutlined } from "@ant-design/icons";
-import data from "../data/Explore.json";
-import SubHeader from "../components/SubHeader";
+import data from "../../../data/Explore.json";
+import SubHeader from "../../../components/headers/SubHeader";
 import Emoji from "react-apple-emojis";
 
 function Explore() {
@@ -16,6 +16,7 @@ function Explore() {
           style={{
             backgroundColor: "var(--bgSecondaryColor)",
             borderRadius: "0.8em",
+            margin: "3em 0 0.5em 0",
             padding: "0.3em 1em",
             border: "none",
             boxShadow: "none",

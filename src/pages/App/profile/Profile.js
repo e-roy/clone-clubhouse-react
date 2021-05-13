@@ -1,6 +1,7 @@
 import React from "react";
-import exploreStyle from "../style/explore.module.css";
-import style from "../style/profile.module.css";
+// import exploreStyle from "../explore/explore.module.css";
+import style from "./profile.module.css";
+import SubHeader from "../../../components/headers/SubHeader";
 import { Link } from "react-router-dom";
 import { BsUpload, BsPlus } from "react-icons/bs";
 import {
@@ -13,7 +14,9 @@ function Profile() {
   return (
     <div>
       <div className={style.profileContainer}>
-        <div className={exploreStyle.header}>
+        <SubHeader pageTitle="" />
+
+        {/* <div className={exploreStyle.header}>
           <div className={`${exploreStyle.head} text-right mb-0`}>
             <Link to="/home">
               <img
@@ -27,7 +30,7 @@ function Profile() {
               <AiOutlineSetting />
             </div>
           </div>
-        </div>
+        </div> */}
         <img
           src="/images/user-img.jpg"
           alt=""

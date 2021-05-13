@@ -1,11 +1,11 @@
 import React from "react";
-import style from "../style/phoneConfirm.module.css";
+import style from "./style/phoneConfirm.module.css";
 import { Link } from "react-router-dom";
 
 function CodeConfirm() {
   return (
     <div className={style.phoneConfirmContainer}>
-      <Link exact to="/phone-confirm" className={style.backBtn}>
+      <Link to="/phone-confirm" className={style.backBtn}>
         <img src="./images/arrow.png" alt="" />
       </Link>
       <div className="text-center">
@@ -26,7 +26,6 @@ function CodeConfirm() {
         </p>
       </div>
       <Link
-        exact
         to="/allow_notification"
         className="primaryBtn d-flex align-items-center"
       >

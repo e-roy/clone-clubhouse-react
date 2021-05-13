@@ -1,8 +1,8 @@
-.Header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5em 1em;
+  padding: 1em 1em 0.5em;
   position: absolute;
   top: 0;
   left: 0;
@@ -10,7 +10,7 @@
   background-color: var(--bgMainColor);
 }
 
-.Header img {
+.header img {
   width: 25px;
 }
 

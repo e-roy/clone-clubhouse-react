@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-align: center;
+  padding: 1em 0.25em 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0.5em;
+}
+
+.header img {
+  width: 25px;
+  /* position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%); */
+}
+
+.header h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0em 2em 0 0;
+}
