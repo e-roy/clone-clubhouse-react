@@ -4,3 +4,23 @@
   height: 100vh;
   overflow: auto;
 }
+
+.invite_container::-webkit-scrollbar {
+  width: 0.2em;
+  background-color: #f5f5f5;
+}
+.invite_container::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.invite_container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #555;
+}
+
+.headlineText {
+  text-align: center;
+  font-size: 17px;
+  margin: 2em 0 3em 0;
+}

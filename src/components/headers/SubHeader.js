@@ -2,6 +2,10 @@ import React from "react";
 import style from "./subheader.module.css";
 import { Link } from "react-router-dom";
 
+// import { BsUpload } from "react-icons/bs";
+
+// import { AiOutlineSetting } from "react-icons/ai";
+
 function SubHeader(props) {
   return (
     <div className={style.header}>

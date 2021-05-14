@@ -1,36 +1,15 @@
 import React from "react";
-// import exploreStyle from "../explore/explore.module.css";
 import style from "./profile.module.css";
 import SubHeader from "../../../components/headers/SubHeader";
-import { Link } from "react-router-dom";
-import { BsUpload, BsPlus } from "react-icons/bs";
-import {
-  AiOutlineInstagram,
-  AiOutlineSetting,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+// import { Link } from "react-router-dom";
+import { BsPlus } from "react-icons/bs";
+import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 
 function Profile() {
   return (
     <div>
       <div className={style.profileContainer}>
         <SubHeader pageTitle="" />
-
-        {/* <div className={exploreStyle.header}>
-          <div className={`${exploreStyle.head} text-right mb-0`}>
-            <Link to="/home">
-              <img
-                src="/images/arrow.png"
-                alt=""
-                className={exploreStyle.arrow_icon}
-              />
-            </Link>
-            <div className={style.actionBtn}>
-              <BsUpload />
-              <AiOutlineSetting />
-            </div>
-          </div>
-        </div> */}
         <img
           src="/images/user-img.jpg"
           alt=""

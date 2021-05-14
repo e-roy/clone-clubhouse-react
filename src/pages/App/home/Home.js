@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import style from "./home.module.css";
+import { Link } from "react-router-dom";
 
 import Header from "../../../components/headers/Header";
 import RoomInfoCard from "../../../components/room_card/RoomInfoCard";
@@ -45,7 +46,18 @@ function Home() {
       <div className={style.home_container}>
         <RoomInfoCard cards={roomCardData} />
         {exploreRoomsVisiblity ? (
-          <RoomInfoCard cards={roomCardExploreData} />
+          <div>
+            <RoomInfoCard cards={roomCardExploreData} />
+            <div className={style.seeMore}>
+              <p style={{ marginBottom: "0" }}>
+                To see more rooms,
+                <Link to="/explore">
+                  <span className={style.followMore}> follow more people.</span>
+                </Link>
+              </p>
+              <p>Or start a room of your own :)</p>
+            </div>
+          </div>
         ) : (
           <div className={style.exploreBtn}>
             <button onClick={() => setExploreRooms(true)}>

@@ -84,3 +84,15 @@
 .exploreBtn span {
   padding-left: 0.5em;
 }
+
+.seeMore {
+  align-items: center;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 8em;
+}
+.followMore {
+  font-weight: 700;
+  color: var(--textColor);
+  padding: 0em 0.1em;
+}

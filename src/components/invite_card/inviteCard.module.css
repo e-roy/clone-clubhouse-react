@@ -1,0 +1,42 @@
+.inviteCardContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0;
+}
+
+.inviteCardContainer div {
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.inviteCardContainer .inviteIcon {
+  background-color: rgb(202, 202, 202);
+  border-radius: 5em;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid rgb(148, 148, 148);
+  padding: 0.4em 0.4em;
+}
+
+.inviteCardContainer .friend {
+  margin-left: -6em;
+  margin-top: 1.5em;
+}
+
+.inviteCardContainer h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0em;
+}
+
+.inviteCardContainer button {
+  background-color: var(--btnBgColor);
+  border: 2px solid var(--btnBgColor);
+  border-radius: 2em;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+  padding: 0.1em 1.2em;
+  margin-top: 0.5em;
+}
