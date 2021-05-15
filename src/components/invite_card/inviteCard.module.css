@@ -7,21 +7,26 @@
 .inviteCardContainer div {
   align-items: center;
   justify-content: space-between;
-  margin: 1em 0;
+  margin: 0.5em 0;
 }
 
 .inviteCardContainer .inviteIcon {
   background-color: rgb(202, 202, 202);
+  height: 40px;
+  width: 40px;
   border-radius: 5em;
+  border: 1px solid rgb(148, 148, 148);
+  padding: 0.3em 0.4em;
+}
+
+.inviteCardContainer .iconText {
   font-size: 18px;
   font-weight: 600;
-  border: 1px solid rgb(148, 148, 148);
-  padding: 0.4em 0.4em;
 }
 
 .inviteCardContainer .friend {
-  margin-left: -6em;
-  margin-top: 1.5em;
+  margin-left: -4em;
+  margin-top: 0.7em;
 }
 
 .inviteCardContainer h3 {

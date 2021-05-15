@@ -2,7 +2,7 @@
   padding: 0 0.5em;
   height: 100%;
   overflow: auto;
-  padding-top: 6.5em;
+  padding-top: 6em;
 }
 
 .exploreContainer::-webkit-scrollbar {
@@ -17,6 +17,21 @@
 .exploreContainer::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #555;
+}
+
+.searchPeople {
+  padding: 0.25em 1em 0 2em;
+  width: 92vw;
+  background-color: var(--bgSecondaryColor);
+  border-radius: 0.75em;
+  border-color: var(--bgSecondaryColor);
+  outline: none;
+  margin-top: 3em;
+  background-image: url(../../../images/search.png);
+  background-size: 12px 12px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
 }
 
 .exploreContainer h6 {

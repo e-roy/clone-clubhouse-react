@@ -1,5 +1,4 @@
 import React from "react";
-// import style from "./inviteCard.module.css";
 import InviteCard from "./InviteCard";
 
 function InviteList(props) {

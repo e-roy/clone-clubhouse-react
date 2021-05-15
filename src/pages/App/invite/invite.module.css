@@ -22,5 +22,33 @@
 .headlineText {
   text-align: center;
   font-size: 17px;
-  margin: 2em 0 3em 0;
+  margin: 2em 0 2em 0;
+}
+.searchContainer {
+  display: flex;
+}
+
+.searchFriends {
+  padding: 0.25em 1em 0 2em;
+  width: 80vw;
+  background-color: var(--bgSecondaryColor);
+  border-radius: 0.75em;
+  border-color: var(--bgSecondaryColor);
+  outline: none;
+  margin-bottom: 1.5em;
+  background-image: url(../../../images/search.png);
+  background-size: 12px 12px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+}
+
+.searchFriends:focus {
+  outline: none;
+}
+
+.addressIcon img {
+  width: 25px;
+  height: 25px;
+  margin-top: 0.25em;
+  margin-left: 1.75em;
 }

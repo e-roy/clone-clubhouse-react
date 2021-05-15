@@ -25,12 +25,13 @@ function RoomInfoCard(props) {
                     </p>
                   </div>
                 ))}
-                <p className="d-flex align-items-center">
-                  <span className="mr-2">1.8k</span>
+                <div className={style.roomTotals}>
+                  <span className="">1.8k</span>
                   <BsFillPersonFill />
-                  <span className="mx-2"></span>{" "}
-                  <span className="mr-2">/ 5</span> <BsChatDotsFill />
-                </p>
+                  <span className=""> /</span>
+                  <span className="">5</span>
+                  <BsChatDotsFill />
+                </div>
               </div>
             </div>
           </div>

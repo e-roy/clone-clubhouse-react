@@ -6,10 +6,12 @@ import peopleData from "../../../data/invite.json";
 
 function Invite() {
   const [peopleSearch, setPeopleSearch] = useState("");
-  const filteredPeople = peopleData.filter((peopleData) =>
-    peopleData.name.toLowerCase().includes(peopleSearch.toLowerCase())
+  const sortedPeople = peopleData.sort(
+    (a, b) => parseFloat(b.friends) - parseFloat(a.friends)
   );
-
+  const filteredPeople = sortedPeople.filter((sortedPeople) =>
+    sortedPeople.name.toLowerCase().includes(peopleSearch.toLowerCase())
+  );
   return (
     <div>
       <SubHeader pageTitle="YOU HAVE 1 INVITE" />
@@ -22,15 +24,23 @@ function Invite() {
             You'll get credit for the invite on their profile!
           </p>
         </div>
+
         <div>
-          <input
-            type="search"
-            placeholder="Search of Invite a phone #"
-            onChange={(e) => setPeopleSearch(e.target.value)}
-          ></input>
-          <div>
-            <InviteList people={filteredPeople} />
+          <div className={style.searchContainer}>
+            <div>
+              <input
+                className={style.searchFriends}
+                type="search"
+                placeholder="Search of Invite a phone #"
+                onChange={(e) => setPeopleSearch(e.target.value)}
+              ></input>
+            </div>
+
+            <div className={style.addressIcon}>
+              <img src="/images/address-book.png" alt="" />
+            </div>
           </div>
+          <InviteList people={filteredPeople} />
         </div>
       </div>
     </div>

@@ -2,9 +2,9 @@ import React from "react";
 import style from "./subheader.module.css";
 import { Link } from "react-router-dom";
 
-// import { BsUpload } from "react-icons/bs";
+import { BsUpload } from "react-icons/bs";
 
-// import { AiOutlineSetting } from "react-icons/ai";
+import { AiOutlineSetting } from "react-icons/ai";
 
 function SubHeader(props) {
   return (
@@ -14,9 +14,25 @@ function SubHeader(props) {
       </Link>
       <h3>{props.pageTitle}</h3>
       <div className={style.nav_items}>
-        {/* <Link to="/invite">
-          <img src="/images/invite.png" alt="" />
-        </Link> */}
+        {props.pageTitle === "UPCOMING FOR YOU" ? (
+          <Link to="/home">
+            <img src="/images/add-calendar.png" alt="" />
+          </Link>
+        ) : (
+          ""
+        )}
+        {props.pageTitle === "" ? (
+          <div className={style.actionBtn}>
+            <Link to="/home">
+              <BsUpload />
+            </Link>
+            <Link to="/home">
+              <AiOutlineSetting />
+            </Link>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./explore.module.css";
-import { Input } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import data from "../../../data/Explore.json";
 import SubHeader from "../../../components/headers/SubHeader";
@@ -12,20 +11,12 @@ function Explore() {
     <div className={style.exploreContainer}>
       <div className={style.header}>
         <SubHeader pageTitle="EXPLORE" />
-        <Input
-          style={{
-            backgroundColor: "var(--bgSecondaryColor)",
-            borderRadius: "0.8em",
-            margin: "3em 0 0.5em 0",
-            padding: "0.3em 1em",
-            border: "none",
-            boxShadow: "none",
-          }}
-          color="#000000"
-          size="large"
+        <input
+          className={style.searchPeople}
+          type="search"
           placeholder="Find People and Clubs"
-          prefix={<img src="images/search.png" width="15px" alt="" />}
-        ></Input>
+          // onChange={(e) => setSearch(e.target.value)}
+        ></input>
       </div>
       <h6 className="mx-2" style={{ fontWeight: 600 }}>
         PEOPLE TO FOLLOW

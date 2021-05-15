@@ -7,7 +7,9 @@ function InviteCard(props) {
     .reduce((response, word) => (response += word.slice(0, 1)), "");
   return (
     <div className={style.inviteCardContainer}>
-      <div className={style.inviteIcon}>{personIcon}</div>
+      <div className={style.inviteIcon}>
+        <span className={style.iconText}>{personIcon}</span>
+      </div>
       <div className={style.friend}>
         <h3>{props.person.name}</h3>
         <span>{props.person.friends} friends on Clubhouse</span>

@@ -7,7 +7,6 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "ant-design": "^1.0.0",
-    "antd": "^4.15.5",
     "bootstrap": "^5.0.0",
     "react": "^17.0.2",
     "react-apple-emojis": "^1.2.0",

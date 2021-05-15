@@ -16,7 +16,7 @@ function Header() {
           <img src="/images/calendar.png" alt="" />
         </Link>
         <Link to="/activity">
-          <img src="/images/noti.png" alt="" />
+          <img src="/images/bell.png" alt="" />
         </Link>
         <Link to="/profile">
           <img src="/images/b1.png" alt="" />

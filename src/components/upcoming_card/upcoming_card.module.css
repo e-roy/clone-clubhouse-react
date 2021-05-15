@@ -1,0 +1,45 @@
+.upcomingCardContainer {
+  padding: 0 0;
+  margin: 1.5em 0;
+}
+
+.upcomingCardTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0;
+}
+
+.upcomingTime {
+  margin-bottom: 0.1em;
+  color: var(--textColorSecondary);
+}
+
+.upcomingTitle {
+  margin-bottom: 0.25em;
+  font-size: 16px;
+  font-weight: 600;
+}
+.upcomingClub {
+  margin-bottom: 0.25em;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.upcomingBell img {
+  width: 25px;
+  height: 25px;
+}
+
+.upcomingCardIcons {
+  display: flex;
+}
+
+.upcomingCardIcons img {
+  width: 30px;
+  border-radius: 15px;
+  margin: 0 0.5em 0 0;
+}
+
+.upcomingCardBottom {
+  padding-top: 0.5em;
+}
